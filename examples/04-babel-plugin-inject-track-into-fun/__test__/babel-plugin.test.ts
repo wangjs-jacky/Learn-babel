@@ -7,7 +7,7 @@ import { expect } from "vitest";
 
 const autoTrackPlugin = require("../src/autoTrackPlugin");
 
-describe("hello-test", () => {
+describe("插件：自动在函数中注入工具库", () => {
   it("hello", () => {
     const sourceCode = fs.readFileSync(
       path.join(__dirname, "./sourceCode.js"),
