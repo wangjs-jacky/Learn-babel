@@ -1,0 +1,16 @@
+{
+  "name": "04-exercize-inject-track-into-fun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/helper-module-imports": "^7.21.4",
+    "@babel/helper-plugin-utils": "^7.21.5"
+  }
+}
