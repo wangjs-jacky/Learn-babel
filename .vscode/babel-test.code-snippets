@@ -1,0 +1,37 @@
+{
+  "使用 vitest 辅助开发 babel 插件": {
+    "prefix": "babel-vitest",
+    "body": [
+      "import { describe, it, expect } from \"vitest\";",
+      "import { transformFromAstSync } from \"@babel/core\";",
+      "import parser from \"@babel/parser\";",
+      "import fs from \"fs\";",
+      "import path from \"path\";",
+      "",
+      "import ${0:defaultPlugin} from \"../src/\";",
+      "",
+      "describe(\"插件：\", () => {",
+      "  it(\"hello\", () => {",
+      "    const sourceCode = fs.readFileSync(",
+      "      path.join(__dirname, \"./sourceCode.tsx\"),",
+      "      {",
+      "        encoding: \"utf-8\",",
+      "      },",
+      "    );",
+      "    const ast = parser.parse(sourceCode, {",
+      "      sourceType: \"unambiguous\",",
+      "      plugins: [\"typescript\"],",
+      "    });",
+      "",
+      "    const { code } = transformFromAstSync(ast, sourceCode, {",
+      "      plugins: [[${0:defaultPlugin}, {}]],",
+      "    });",
+      "",
+      "    expect(code).toMatchInlineSnapshot();",
+      "  });",
+      "});",
+      ""
+    ],
+    "description": "使用 vitest 辅助开发 babel 插件"
+  }
+}
