@@ -1,4 +1,3 @@
-const importModule = require("@babel/helper-module-imports");
 const { declare } = require("@babel/helper-plugin-utils");
 const generate = require("@babel/generator").default;
 import fse from "fs-extra";
@@ -60,7 +59,6 @@ const autoI18nPlugin = declare(
 
     return {
       pre(file) {
-        /* 设置 allText 关键字，file 的作用是什么? */
         file.set("allText", []);
       },
       visitor: {

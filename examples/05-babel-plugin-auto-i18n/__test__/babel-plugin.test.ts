@@ -1,11 +1,10 @@
-import { describe, it } from "vitest";
+import { describe, it, expect } from "vitest";
 import { transformFromAstSync } from "@babel/core";
 import parser from "@babel/parser";
 import fs from "fs";
 import path from "path";
-import { expect } from "vitest";
 
-import autoTrackPlugin from "../src/autoI18nPlugin";
+import autoTrackPlugin from "../src/autoI18nPlugin.js";
 
 describe("插件：自动国际化", () => {
   it("hello", () => {
