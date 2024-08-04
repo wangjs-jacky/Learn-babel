@@ -1,0 +1,99 @@
+[
+  {
+    "type": "function",
+    "params": [
+      {
+        "name": "name",
+        "type": {
+          "type": "TSStringKeyword",
+          "start": 140,
+          "end": 146,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 21,
+              "index": 140
+            },
+            "end": {
+              "line": 8,
+              "column": 27,
+              "index": 146
+            }
+          }
+        }
+      },
+      {
+        "name": "age",
+        "type": {
+          "type": "TSNumberKeyword",
+          "start": 153,
+          "end": 159,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 34,
+              "index": 153
+            },
+            "end": {
+              "line": 8,
+              "column": 40,
+              "index": 159
+            }
+          }
+        }
+      },
+      {
+        "name": "v3",
+        "type": {
+          "type": "TSBooleanKeyword",
+          "start": 165,
+          "end": 172,
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 46,
+              "index": 165
+            },
+            "end": {
+              "line": 8,
+              "column": 53,
+              "index": 172
+            }
+          }
+        }
+      }
+    ],
+    "return": "TSStringKeyword",
+    "doc": {
+      "description": "say 你好",
+      "tags": [
+        {
+          "title": "param",
+          "description": "{string} 名字",
+          "type": null,
+          "name": "name"
+        },
+        {
+          "title": "param",
+          "description": "{number} 年龄",
+          "type": null,
+          "name": "age"
+        },
+        {
+          "title": "param",
+          "description": "{boolean} 是否",
+          "type": null,
+          "name": "v3"
+        },
+        {
+          "title": "returns",
+          "description": null,
+          "type": {
+            "type": "NameExpression",
+            "name": "string"
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,8 +1,11 @@
 /**
  * say 你好
- * @param name 名字
+ * @param name {string} 名字
+ * @param age {number} 年龄
+ * @param v3 {boolean} 是否
+ * @returns {string} 
  */
-function sayHi(name: string, age: number, a: boolean): string {
+function sayHi(name: string, age: number, v3: boolean): string {
   console.log(`hi, ${name}`);
   return `hi, ${name}`;
 }

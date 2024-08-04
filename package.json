@@ -19,6 +19,7 @@
     "@babel/template": "^7.20.7",
     "@babel/traverse": "^7.21.5",
     "@babel/types": "^7.21.5",
-    "@types/node": "^20.1.4"
+    "@types/node": "^20.1.4",
+    "fs-extra": "11.1.1"
   }
 }
